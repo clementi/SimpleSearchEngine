@@ -40,9 +40,16 @@
     <Reference Include="Machine.Specifications.Clr4">
       <HintPath>..\packages\Machine.Specifications-Signed.0.8.3\lib\net45\Machine.Specifications.Clr4.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleSearchEngine.Indexing\SimpleSearchEngine.Indexing.csproj">
+      <Project>{4EB4957A-466D-44CF-A6BF-221E17FFD728}</Project>
+      <Name>SimpleSearchEngine.Indexing</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

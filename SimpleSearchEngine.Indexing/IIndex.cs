@@ -5,6 +5,8 @@ namespace SimpleSearchEngine.Indexing
 {
     public interface IIndex
     {
+        void Add(string word, Guid documentId);
+
         ISet<Guid> Get(string word);
     }
 }
